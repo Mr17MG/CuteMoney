@@ -7,6 +7,7 @@
 #include "src/translator.h"
 #include <QSettings>
 #include "statusbar.h"
+#include <QQuickStyle> // Require For setStyle()
 
 int main(int argc, char *argv[])
 {
@@ -21,6 +22,7 @@ int main(int argc, char *argv[])
     qmlRegisterType<Languages>("ir.myco.Languages",1,0,"MycoLanguages");
 
     QQmlApplicationEngine engine;
+    QQuickStyle::setStyle("Material");
 
     QSettings settings(QGuiApplication::organizationDomain(), QGuiApplication::applicationName());
     Translator mTrans(&app,Languages::FA);
