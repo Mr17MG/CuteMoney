@@ -1,6 +1,5 @@
 <RCC>
     <qresource prefix="/">
-        <file>qtquickcontrols2.conf</file>
         <file>Components/SlideDelegate.qml</file>
         <file>Pages/Setting.qml</file>
         <file>Icons/trashIcon.svg</file>
